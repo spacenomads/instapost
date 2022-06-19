@@ -15,7 +15,7 @@ function readDataFile(event) {
       .map(line => line.trim())
       .filter(Boolean);
     lines.forEach(line => {
-      phrases.push(line);
+      phrases.push(`"${line}"`);
     });
     createPosts(phrases)
   };
@@ -30,7 +30,6 @@ function createPosts(phrases) {
     if (index < totalImages) {
       postPhrase.innerText = phrases[index];
       downloadPost(index);
-      console.log({index, totalImages});
       index++;
     } else {
       clearInterval(interval);
@@ -48,13 +47,13 @@ function downloadPost(index) {
     link.download = `post-${index}.png`;
     link.click();
   });
-   
+
 
 }
 
-  
-  
-  
+
+
+
 fileField.addEventListener('change', readDataFile);
 
 

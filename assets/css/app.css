@@ -1,67 +1,62 @@
-:root {
-  --post-bg: #5F95A2;
-  --post-width: 1080px;
+.app {
 }
 
-.app { }
-.app__view { }
+:root {
+	--post-bg: #4698a5;
+	--post-width: 1080px;
+}
 
+.app__view {
+}
 
 .app__post {
-  padding: 180px;
-  box-sizing: border-box;
-  background-color: var(--post-bg);
-  width: var(--post-width);
-  height: var(--post-width);
+	padding: 270px 180px 220px;
+	box-sizing: border-box;
+	background-color: var(--post-bg);
+	width: var(--post-width);
+	height: var(--post-width);
 }
+
 .app__post-title {
-  width: 720px;
-  height: 360px;
-  margin: 0 auto;
-  position: relative;
-
-font-family: arial, sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 62px;
-/* or 124% */
-text-align: center;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-
+	width: 720px;
+	height: 360px;
+	margin: 0 auto;
+	position: relative;
+	font-family: arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 62px;
+	overflow: hidden;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
 }
 
 .app__post-title::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -90px;
-  transform: translateX(-50%);
-  width: 72px;
-  height: 4px;
-  background-color: white;
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -90px;
+	transform: translateX(-50%);
+	width: 72px;
+	height: 4px;
+	background-color: white;
 }
 
 .app__post-daus {
-  margin: 180px 0 0;
-  text-align: center;
-
-font-family: arial, sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 50px;
-text-align: center;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-
+	margin: 180px 0 0;
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
 }
 
 .app__download {
-  margin-top: 2em;
+	margin-top: 2em;
 }
